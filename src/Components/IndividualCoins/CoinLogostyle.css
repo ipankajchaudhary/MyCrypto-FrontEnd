@@ -1,0 +1,160 @@
+.index{
+  display: inline-block;
+  text-align: left;
+  border-bottom: 1px solid #eff2f5;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  width: 43px;
+  height: 79px;
+  font-weight: 500;
+}
+.index p{
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(88, 102, 126);
+    font-size: 12px;
+    position: relative;
+    top: 30%;
+}
+
+.logo-name-box{
+    text-align: left;
+  
+    display: inline-block;
+    width: 220px;
+    height: 80px;
+    border-bottom: 1px solid #eff2f5;
+}
+.for-hover{
+    height: 80px;
+}
+.for-hover:hover{
+    background-color: rgb(219, 220, 223);
+}
+
+.escjih{
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+}
+.Link-to-detail-Page{
+    text-decoration: none;  
+    cursor: pointer;
+}
+.logo-name-container{
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    
+}
+.coin-logo{
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border-spacing: 0px;
+}
+.coinname{
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+}
+.coinname p{
+    margin: 0px 0px 0px 5px;
+    line-height: 24px;
+    font-size: 14px;
+    color: rgb(23, 25, 36);
+    font-weight: 600;
+}
+.coin-symbol{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.coin-symbol p{
+    font-size: 14px;    
+    line-height: 24px;
+    color: rgb(128, 138, 157);
+    text-transform: uppercase;
+}
+.add-logo{
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(239, 242, 245);
+    border: 0px;
+    border-radius: 8px;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    font-weight: 600;
+    width: auto;
+    height: 22px;
+    font-size: 11px;
+    padding: 2px 8px;
+    line-height: 11px;
+}
+
+
+
+
+
+
+@media only screen and (max-device-width: 480px) {
+
+
+    .abc{
+        width: 200px;
+    }
+
+    .logo-name-box{
+        width: 180px;
+        height: 60px;
+    }
+    .coinname{
+        display: block;}
+    .index{
+        /* width: 20px;
+         */
+         display: none;
+    }
+    .for-hover{
+        height: 60px;
+    }
+    .escjih{
+        position: relative;
+        top:4%;
+    }
+    
+
+}
+
+.abc{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    /* width: 250px; */
+  }
+.abc li{
+    display: inline;
+    padding: 10px;
+    align-items: right;
+ 
+}

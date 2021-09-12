@@ -1,0 +1,209 @@
+.navbar .navbar-nav .nav-link:hover {
+  color: #000000;
+
+}
+/* .mobileHide { width: 88px;} */
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .margin-right{
+      position: relative;
+      right: -25px;
+
+    }
+
+    .main-logo {
+        height: 40px;
+        border-radius : 8px;
+        position : relative;
+        /* margin-left: 100px; */
+        /* left: 10px; */
+      }
+    .navbar-brand{
+      margin-left: -90px;
+      position: relative;
+      left: 30px;
+    }
+    .navbar-brand b{
+      position: relative;
+      left: 69px;
+    }
+    .d-flex{
+      margin: auto;
+    }
+    /* #search-form input {
+      width: 150px;
+          padding: px;
+          margin: 0;
+    } */
+    .mobileHide{
+      position: relative;
+      right: -20px;
+      bottom: 2px;
+    }
+
+    .mobileHide input:hover{
+      display: inline;
+      /* bottom: 2px; */
+      border-bottom: 2px solid #3861fb;
+      transition: all 0.1s;
+
+       }
+       .mobileHide button{
+        display: inline;
+         }
+         .navbar-light .navbar-toggler {
+          color: #3861fb;
+          border: 2px solid #3861fb;
+          position: relative;
+          bottom:3px;
+          left: -100px;
+        }
+    .navbar-toggler-icon{
+      position: relative;
+      left: 1px;
+      background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#3861fb' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
+    }
+    .fa-bell::before { content: '\A'; white-space: pre; 
+      display: block;
+    }
+    .btn-login{
+      width: 200px;
+      display: block;
+    }
+    /* .btn{
+      display: block;
+    } */
+
+ }
+@media only screen and (min-width: 960px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0.7em;
+  }
+  .navbar {
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .navbar .navbar-brand {
+    padding: 0 0.7em;
+  }
+  .navbar-brand b{
+    position: relative;
+    left: -10px;
+  }
+  .main-logo {
+      height: 40px;
+      border-radius : 8px;
+      position : relative;
+      right: -35px
+    }
+  }
+ .mobileShow input{
+display: none;
+visibility: hidden;
+ }
+ .mobileShow button{
+  display: none;
+  visibility: hidden;
+   }
+
+.navbar .navbar-nav .nav-link {
+  position: relative;
+}
+.navbar .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #3861fb;
+  color: transparent;
+  width: 0%;
+  content: "";
+  height: 3px;
+  transition: all 0.1s;
+}
+
+.btn-login{
+border: none;
+margin-right: 10px;
+background-color: #ffffff;
+}
+.btn-login:hover{
+  border: 2px solid rgb(184, 181, 181);
+  border-radius: 10px;
+}
+
+.btn{
+  background-color: #3861fb;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.btn:hover{
+  background-color: #1443f0;
+  color: #ffffff;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.search-form {
+	display: inline-block;
+	padding-top: 4px;
+	padding-right: 5px;
+  /* width: 10px; */
+}
+ 
+.search-form input {
+	width: 200px;
+	float: left;
+	border-radius: 2px 0 0 2px;
+	font-size: 13px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 0;
+        outline: 0;
+	font-size: 100%;
+	font: inherit
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+      position: absolute;
+      top: 54px;
+      left: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      width: 100%;
+  }
+  /* .navbar-collapse.collapsing {
+      height: auto;
+      -webkit-transition: left 0.3s ease;
+      -o-transition: left 0.3s ease;
+      -moz-transition: left 0.3s ease;
+      transition: left 0.3s ease;
+      left: -100%;
+  }
+  .navbar-co  llapse.show {
+      left: 0;
+      -webkit-transition: left 0.3s ease-in;
+      -o-transition: left 0.3s ease-in;
+      -moz-transition: left 0.3s ease-in;
+      transition: left 0.3s ease-in;
+  } */
+}
+
+input:focus, textarea:focus
+{
+border-bottom: 1px solid #1670BE;
+/* box-shadow: 0 0 3px #1670BE; */
+/* outline-offset: 0px;
+outline: none; */
+}
+.searchbox{
+  margin-bottom: 0px;
+  width: 100px;
+  margin-left :10px ;
+}

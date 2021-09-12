@@ -1,0 +1,92 @@
+.signup{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 35%;
+    height: 81%;
+    margin: auto;
+    border: 2px solid #eaeaea;
+    border-radius: 20px;
+    padding: 2%;
+}
+.Head{
+    margin-top: -15px;
+}
+#NameInput{
+    width: 100%;
+    border-radius: "10px";
+}
+#EmailInput{
+    width: 100%;
+    border-radius: "10px";
+}
+/* .form-control{ */
+.New{
+    color: #908787;
+    font-size: 85%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.New Link{
+    text-decoration: none;
+    color: #3861fb;
+}
+.btn{
+    width: 100%;
+    background-color: #3861fb;
+    margin-top: 2%;
+}
+.FP{
+    position: relative;
+    float: right;
+    border: none;
+    background-color: white;
+    font-size: smaller;
+    color: #908787;
+}
+
+#show-eye{
+    position: relative;
+    bottom: 48px;
+    z-index: 1000;
+    float : right;
+    /* border-top-left: none; */
+    border: 2px solid #d5dadf;
+    padding: 2.20%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0px; 
+    cursor: pointer;
+
+}
+#Password{
+    border-right: none;
+    width: 90.8%;
+}
+/* .password-input{
+    border-top-right-radius: none;
+    width: 90.8%;
+    border-right: none;
+} */
+input{  
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .signup{
+        width: 90%;
+        height: 79%;
+        padding-left: 15px;
+    }
+    .Head{
+        margin-top: 10px;
+        /* margin-left: 10px; */
+    }
+    
+}

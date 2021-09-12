@@ -1,0 +1,90 @@
+.header-image{
+    background-image: url("https://minutes.co/wp-content/uploads/2019/06/shutterstock_1044225994-e1561737001560.jpg");
+    height: 100vh;
+    color: white;
+    /* margin-bottom: 100px; */
+}
+
+.setMargin{
+    margin: 10px 30px;
+}
+.fs-1,.fs-4{
+    position: relative;
+    bottom: -200px;
+    left: 8%;
+    width: 500px;
+}
+.fs-4{
+    width: 60%;
+}
+
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: -20px;
+  }
+  .okc{
+    justify-content: center;
+    position: relative;
+    left: -64%;
+  }
+  td{
+    border-bottom: 1px solid #eff2f5;
+    padding: 10px;
+    background-color: #ffffff;
+    text-align : right;
+    font-weight : 500;
+    white-space : nowrap;
+    box-sizing: border-box;
+    border-spacing: 0px;
+    box-sizing: border-box;
+    border-spacing: 0px;
+    font-size: 14px;
+    /* width: 125px; */
+    height: 80px;
+}
+table, th, td {
+    margin-bottom: 0px;
+    position: relative;
+  }
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+ 
+}
+.Table-header{
+    border-bottom: 2px solid #eff2f5;
+    border-top: 2px solid #eff2f5;
+    height: 46px;
+}
+.cmc-link{
+    position: relative;
+}
+
+  
+  
+@media only screen and (max-device-width: 480px) {
+
+    .fs-1,.fs-4{
+        position: relative;
+        bottom: -200px;
+        left: 6%;
+        width: 75vw;
+    }
+    .fs-4{
+        width: 60%;
+    }
+    .setMargin{
+        margin: 1px 1px;
+    }
+    td{
+        height: 60px;
+        width: 100px;
+    }
+    .Table-header{
+        width: 50px;
+    }
+
+}
