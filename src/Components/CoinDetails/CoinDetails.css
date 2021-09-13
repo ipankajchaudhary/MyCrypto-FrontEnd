@@ -149,7 +149,7 @@ a, a:not([href]):not([tabindex]) {
 @media (min-width: 1376px){
 
  .nameSection,  .linksSection {
-    flex: 0 0 36%;
+    flex: 0 0 43%;
 }
 }
 @media screen and (min-width: 768px){
@@ -305,7 +305,7 @@ a, a:not([href]):not([tabindex]) {
 @media (min-width: 768px)
 {
  .priceSection {
-    flex: 0 0 50%;
+    flex: 0 0 34%;
 }
 }
  .priceSection {
@@ -323,12 +323,10 @@ a, a:not([href]):not([tabindex]) {
 @media (min-width: 768px)
 {
  .priceSection {
-    flex: 0 0 50%;
+    flex: 0 0 34%;
 }
 }
- .priceSection {
-    margin-top: 14px;
-}
+
 
 
  .priceHeading {
@@ -663,7 +661,6 @@ a, a:not([href]):not([tabindex]) {
     flex: 0 0 52%;
 }}
 @media (min-width: 768px)
-
 { .statsSection {
     order: 5;
     flex: 0 0 52%;
@@ -1081,7 +1078,7 @@ a, a:not([href]):not([tabindex]) {
 }
 .add-in-portfolio{
     order: 4;
-    flex: 0 0 36%;
+    flex: 0 0 43%;
 }
 
 /* For Chart */

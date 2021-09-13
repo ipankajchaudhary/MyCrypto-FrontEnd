@@ -8,6 +8,7 @@ import NameSection from './CoinDetailsComponents/NameSection'
 import PriceSection from './CoinDetailsComponents/PriceSection'
 import StateSection from './CoinDetailsComponents/StateSection'
 import CurrencyConvertor from './CoinDetailsComponents/CurrencyConvertor'
+import AddInPortfolio from './CoinDetailsComponents/AddInPortfolio'
 const CoinDetails = () => {
   const { id } = useParams();
   const [coinData, setCoinData] = useState({});
@@ -93,6 +94,7 @@ const CoinDetails = () => {
                 <CurrencyConvertor/>
               </div>
               <StateSection detail={detail} />
+              <AddInPortfolio/>
             </div>
           </div>
         </div>
@@ -123,7 +125,9 @@ const CoinDetails = () => {
                           </ul>
                         </div>
                       </div>
-                      <CoinChart data={coinData} />
+                    <div className="add-in-portfolio">
+                    <CoinChart data={coinData} />
+                    </div>
                     </div>
                   </div>
                 </div>

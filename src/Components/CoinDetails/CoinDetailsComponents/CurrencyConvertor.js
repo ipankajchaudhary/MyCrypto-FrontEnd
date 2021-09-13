@@ -4,7 +4,7 @@ const CurrencyConvertor = () => {
 
 
     return (
-        <div>
+        <div style={{width:"430px"}}>
             <h3 color="text" className="sc-1q9q90x-0 ixTvhU">DOGE to INRConverter</h3>
             <div className="sc-16r8icm-0 sc-19zk94m-5 gshXSv">
                 <div className="sc-19zk94m-0 fVBBJq">
