@@ -57,7 +57,7 @@ const StateSection = ({ detail }) => {
                                     Max Supply
 
                                 </div>
-                                <div className="maxSupplyValue">
+                                <div className="statsValue">
                                     {detail.max_supply}
                                 </div>
                             </div>
@@ -65,7 +65,7 @@ const StateSection = ({ detail }) => {
                                 <div className="statsLabel">
                                     Total Supply
                                 </div>
-                                <div className="maxSupplyValue">
+                                <div className="statsValue">
                                     18,813,762
                                 </div>
                             </div>

@@ -18,8 +18,7 @@
 .full-width-layout {
     padding: 0px;
     max-width: 100%;
-    background: linear-gradient(rgb(248, 250, 253) 0%, rgba(248, 250, 253, 0) 413px);
-}
+    background: linear-gradient(rgb(237 244 255) 0%, rgba(248, 250, 253, 0) 413px);}
 .grid {
     box-sizing: border-box;
     width: 100%;
@@ -752,4 +751,110 @@ p {
         margin-bottom: 8px;
     }
 
+}
+@media only screen and (max-device-width: 480px) {
+    .grid {
+        box-sizing: border-box;
+        width: 100%;
+        /* padding-right: 16px; */
+        /* padding-left: 16px; */
+        padding: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .link-container-1{
+        margin-bottom: 10px;
+    }
+    .link-container-2{
+        font-size: 10px;
+    }
+    .link-container-2 a{
+        font-size: 12px;
+        /* display: none; */
+    }
+    .fas{
+        /* font-weight: 600; */
+        margin-bottom: -200px;
+    }
+    .link-container-1 span{
+        font-size: 14px;
+    }
+    .watchlist-icon-container{
+        position: relative;
+        right: -99px;
+    }
+    .rank-container{
+        margin-left: -10px;
+        margin-bottom: 18px;
+    }
+    .priceHeading{
+        font-size: 14px;
+        margin-bottom:  8px;
+    }
+    .priceValue{
+        margin-right: 147px;
+    }
+    .priceTitle{
+        
+        margin-bottom: 12px;
+    }
+    .Low-High-data,.Low-High-Text{
+        font-size: 15px;
+    }
+    .low-price-container{
+        flex: 0 0 50%;
+    }
+    .add-in-portfolio {
+        order: 4;
+        flex: 0 0 43%;
+    }
+    .statsSection {
+        order: 3;
+        flex: 0 0 52%;
+    }
+    .nameSection, .linksSection {
+        flex: 0 0 43%;
+    }
+    .priceSection {
+        flex: 0 0 34%;
+        margin-bottom: 10px;
+    }
+    .statsBlockInner{
+        display: flex;
+    }
+    .statsLabel{
+        font-size: 14px;
+    }
+    .statsBlock{
+        width: 100%;
+    }
+    .statsValue{
+        font-size: 14px;
+    }
+    .statsItemRight{
+        margin-left: 130px;
+    }
+    .percent-change{
+        display: none;
+    }
+    .statsBlock{
+        border: none;
+    }
+    .statsSection{
+        border-bottom: 1px solid var(--color-light-neutral-2);
+    }
+    .add-in-portfolio{
+        margin-top: 10px;
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+    .convertor-inner-container{
+        width: 90vw;
+    }
+    .add-in-portfolio div{
+        width: 90vw;
+    }
+    .chart-options{
+        margin-top: 10px;
+    }
 }

@@ -89,10 +89,12 @@ const CoinDetails = () => {
           <div className="upper-container top-summary-container">
             <NameSection detail={detail} />
             <PriceSection detail={detail} />
+            
+            <StateSection detail={detail} />
             <div className="add-in-portfolio">
               <CurrencyConvertor />
             </div>
-            <StateSection detail={detail} />
+   
             <AddInPortfolio />
           </div>
 

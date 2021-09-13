@@ -31,7 +31,7 @@ const CoinChart = ({ data }) => {
         // gridThickness: 0,
           // lineThickness: 0,
          
-        interval: 1
+        interval: 3
     },
     data: [{
       type: "line",
