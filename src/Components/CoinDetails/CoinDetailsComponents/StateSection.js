@@ -52,7 +52,7 @@ const StateSection = ({ detail }) => {
                                 </div>
                             </div>
 
-                            <div display="flex" className=" dwCYJB">
+                            <div display="flex" className=" total-supply">
                                 <div className="statsLabel">
                                     Max Supply
 

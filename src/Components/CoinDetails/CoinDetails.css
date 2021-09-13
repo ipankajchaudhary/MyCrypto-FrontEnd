@@ -361,8 +361,16 @@ a, a:not([href]):not([tabindex]) {
     -webkit-box-align: center;
     align-items: center;
 }
-
- .namePill {
+.percent-change{
+    color: red;
+    padding: 0;
+    border-radius: 8px;
+    display: block;
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.namePill {
     margin-right: 8px;
 }
 
@@ -382,6 +390,7 @@ a, a:not([href]):not([tabindex]) {
 }
 
  .statsLabel {
+     padding: 10px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -712,7 +721,7 @@ p {
     div.sliderSection {
         margin: 14px 0px 8px;
         -webkit-box-pack: end;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
     .statsSection {
         order: 5;
@@ -737,7 +746,7 @@ p {
     }
     .second-stateBlock {
         grid-column: span 12 / auto;
-        display: block;
+        display: flex;
         padding-left: 0px;
         margin-top: 12px;
         margin-bottom: 8px;
