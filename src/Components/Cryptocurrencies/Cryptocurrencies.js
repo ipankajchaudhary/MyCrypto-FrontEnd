@@ -54,7 +54,7 @@ const Cryptocurrencies = () => {
                         <table>
                         <tbody>
                         <tr>
-                        <td className="Table-header" style={{ width: "42px" }}>
+                        <td className="Table-header"  style={{ width: "42px" }}>
                             <div className="sc-131di3y-0 cLgOOr" >
                                 <Link to="/Cryptocurrencies" className="cmc-link">#</Link>
                             </div>

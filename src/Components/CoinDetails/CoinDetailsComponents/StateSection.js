@@ -41,7 +41,7 @@ const StateSection = ({ detail }) => {
                             </div>
                         </div>
 
-                        <div className="statsBlock" style={{borderRight:"none"}}>
+                        <div className="statsBlock" style={{borderRight:"none", marginLeft:"22px",paddingLeft:"116px"}}>
                             
                             
                         

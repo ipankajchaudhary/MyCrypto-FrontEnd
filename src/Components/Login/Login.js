@@ -21,13 +21,13 @@ const Login = () => {
         <form>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label"> <b> Email address</b></label>
-            <input type="email" className="form-control for-email" style={{borderRadius:"10px"}} id="exampleInputEmail1" placeholder="Enter your email address..." aria-describedby="emailHelp" />
+            <input type="email" className="form-control for-email" style={{borderRadius:"10px"}} id="exampleInputEmail1" placeholder="Enter your email address..." aria-describedby="emailHelp"  autoComplete="on"/>
             
           </div>
           <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label" id="id_password"> <b> Password</b></label>
             <button type="submit" className="FP">Forgot password?</button>
-            <input type="password" className="form-control password-input" id="Password" placeholder="Enter your password..." />
+            <input type="password" className="form-control password-input" id="Password"  autoComplete="on" placeholder="Enter your password..." />
             <i className="far fa-eye " id="show-eye"></i>
             <i className="far fas fa-eye-slash d-none " style={{ marginLeft: "0px", cursor: "pointer" }} id="hide_eye"></i>
           <button type="submit" className="btn btn-primary">Log In</button>

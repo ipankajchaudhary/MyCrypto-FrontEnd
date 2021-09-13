@@ -7,8 +7,10 @@
   font-weight: 500;
   white-space: nowrap;
   width: 43px;
-  height: 79px;
+  height: 80px;
   font-weight: 500;
+  position: relative;
+  top: -4px
 }
 .index p{
     line-height: 1.5;
