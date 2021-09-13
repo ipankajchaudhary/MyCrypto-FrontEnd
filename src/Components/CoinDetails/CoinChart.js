@@ -4,9 +4,8 @@ var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
 const CoinChart = ({ data }) => {
     const {day} = data
-  console.log(day)
-  const options = {
-      animationEnabled: true,
+    const options = {
+    animationEnabled: true,
     theme: "light1", // "light1", "dark1", "dark2"
     zoomEnabled: true,
     // zoomType: "xy",
@@ -38,9 +37,9 @@ const CoinChart = ({ data }) => {
       type: "line",
       // lineColor: "red",
       fallingColor: "#AF2020",
-      xValueFormatString: "MMM YYYY",
+      xValueFormatString: "HH:MM",
 			yValueFormatString: "$#,##0.00",
-      toolTipContent: "Week {x}: {y}%",
+      toolTipContent: "Time : {x} | Price : { y }",
       dataPoints: day
     }]
     }

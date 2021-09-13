@@ -660,13 +660,13 @@ a, a:not([href]):not([tabindex]) {
 
 { .statsSection {
     order: 5;
-    flex: 0 0 64%;
+    flex: 0 0 52%;
 }}
 @media (min-width: 768px)
 
 { .statsSection {
     order: 5;
-    /* flex: 0 0 100%; */
+    flex: 0 0 52%;
 }}
 @media screen and (min-width: 768px)
 
@@ -677,8 +677,8 @@ a, a:not([href]):not([tabindex]) {
 @media (min-width: 768px)
 
 { .statsContainer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(12, 1fr); */
 }
 }
  .statsContainer {

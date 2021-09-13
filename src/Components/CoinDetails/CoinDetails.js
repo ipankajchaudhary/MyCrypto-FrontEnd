@@ -62,14 +62,11 @@ const CoinDetails = () => {
     };
 
     fetchData();
-    console.log(coinData)
 
     // eslint-disable-next-line 
   }, []);
 
   const { detail } = coinData
-  const { day } = coinData
-  console.log(day)
 
   const renderData = () => {
     if (isLoading) {
