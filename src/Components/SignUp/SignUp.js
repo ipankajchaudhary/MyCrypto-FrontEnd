@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function SignUp() {
     return (
         <div>
-            <div className="container signup">
+            <div className="signup">
                 <div className="Head"> <h3><b> Create an account</b></h3></div>
                 <div className="New">Gain access to additional features such as Watchlist and Portfolio tracking.
                     <br />Already have an account?

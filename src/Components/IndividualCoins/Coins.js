@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Coinsstyle.css";
 
-import { Link } from 'react-router-dom';
+import { div } from 'react-router-dom';
 
 
 const Coins = ({ coin ,currentcurrency}) => {
@@ -16,41 +16,43 @@ const Coins = ({ coin ,currentcurrency}) => {
                 <tr>
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.current_price}</Link>
+                            <div className="cmc-div"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.current_price}</div>
                         </div>
                     </td>
 
 
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.high_24h}</Link>
+                            <div className="cmc-div"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.high_24h}</div>
                         </div>
                     </td>
 
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link">  &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.low_24h}</Link>
+                            <div className="cmc-div">  &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.low_24h}</div>
                         </div>
                     </td>
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className={coin.price_change_percentage_24h < 0 ? "text-danger" : "text-success"}>
+                            <div className={coin.price_change_percentage_24h < 0 ? "text-danger" : "text-success"}>
                                 {" "}
                                 {coin.price_change_percentage_24h < 0 ? <i className="fas fa-sort-down align-middle mr-3"></i>   : <i className="fas fa-sort-up align-middle mr-1"></i>}
                                 
-                                {coin.price_change_percentage_24h<0?Math.abs(coin.price_change_percentage_24h):coin.price_change_percentage_24h}</Link>
+                                {coin.price_change_percentage_24h<0?Math.abs(coin.price_change_percentage_24h):coin.price_change_percentage_24h}</div>
                         </div>
                     </td>
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link">  &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.market_cap_change_24h}</Link>
+                            <div className="cmc-div">  &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.market_cap_change_24h}</div>
                         </div>
                     </td>
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link">{coin.circulating_supply}</Link>
+                            <div className="cmc-div">{coin.circulating_supply}</div>
                         </div>
                     </td>
+                   
+                    
                     
                     
                     

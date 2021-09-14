@@ -6,7 +6,6 @@ import Login from "./Components/Login/Login";
 import SignUp from "./Components/SignUp/SignUp";
 import Cryptocurrencies from "./Components/Cryptocurrencies/Cryptocurrencies";
 import CoinDetails from "./Components/CoinDetails/CoinDetails";
-// import Cryptocurrencies from "./Components/Cryptocurrencies/Cryptocurrencies";
 
 function App() {
 

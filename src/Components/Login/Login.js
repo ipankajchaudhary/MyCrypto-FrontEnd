@@ -13,7 +13,7 @@ const Login = () => {
   // var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
   return (
     <>
-      <div className="container login">
+      <div className="login">
         <div className="LoginTitle"> <h3><b> Log In</b></h3></div>
         <div className="New">New to MyCrypto?
           <Link to="/SignUp" style={{ textDecoration: "none"}}> Create an account</Link></div>

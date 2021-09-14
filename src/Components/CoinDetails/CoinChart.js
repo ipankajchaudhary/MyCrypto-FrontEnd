@@ -37,8 +37,8 @@ const CoinChart = ({ data }) => {
       // lineColor: "red",
       fallingColor: "#AF2020",
       xValueFormatString: "HH:MM",
-			yValueFormatString: "$#,##0.00",
-      toolTipContent: "Time : {x} | Price : { y }",
+			yValueFormatString: "#,##0.00",
+      toolTipContent: "Price : { y }",
       dataPoints: data()
     }]
     }

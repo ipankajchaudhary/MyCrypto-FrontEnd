@@ -112,7 +112,7 @@ const Cryptocurrencies = ({currentcurrency}) => {
                             {coins.map((coin) => {
                                 return (
                                     <>
-                                        <Coins key={coin.id} coin={coin} currentcurrency={currentcurrency}/>
+                                        <Coins key={coin.id} coin={coin} currentcurrency={currentcurrency} />
                                        
                                     </>
                                 )

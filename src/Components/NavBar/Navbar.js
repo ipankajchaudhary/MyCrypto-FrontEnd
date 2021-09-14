@@ -14,7 +14,6 @@ const Navbar = ({ currentcurrency, changecurrency}) => {
         
         changecurrency("usd");
     };
-    console.log(currentcurrency)
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ height: "52px" }}>
@@ -42,8 +41,8 @@ const Navbar = ({ currentcurrency, changecurrency}) => {
                         </ul>
                         <div className="navbar-text d-flex justify-content-between">
                             <div className="change-currency">
-                            <button type="button" onClick={handlesetcurrency1} className="btn-outline-secondary">INR</button>
-                            <button type="button" onClick={handlesetcurrency2} className="btn-outline-secondary">USD</button>
+                            <button type="button" onClick={handlesetcurrency1} className={currentcurrency === "inr" ? "dark-grey btn-outline-secondary": "light-grey btn-outline-secondary"}>INR</button>
+                            <button type="button" onClick={handlesetcurrency2} className={currentcurrency === "usd" ? "dark-grey btn-outline-secondary": "light-grey btn-outline-secondary"}>USD</button>
                             </div>
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
