@@ -207,3 +207,28 @@ outline: none; */
   width: 100px;
   margin-left :10px ;
 }
+
+.change-currency{
+display: flex;
+border: 2px solid white;
+}
+
+.btn-outline-secondary{
+border: none !important;
+
+outline: none !important;
+box-shadow: none !important;
+}
+.btn-outline-secondary:hover{
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+
+  }
+
+  .btn-outline-secondary::-moz-focus-inner {
+    border: 0;
+    box-shadow: none !important;
+    outline: 0 !important;
+
+ }

@@ -3,7 +3,6 @@ import CanvasJSReact from '../assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
 const CoinChart = ({ data }) => {
-    const {day} = data
     const options = {
     animationEnabled: true,
     theme: "light1", // "light1", "dark1", "dark2"
@@ -40,7 +39,7 @@ const CoinChart = ({ data }) => {
       xValueFormatString: "HH:MM",
 			yValueFormatString: "$#,##0.00",
       toolTipContent: "Time : {x} | Price : { y }",
-      dataPoints: day
+      dataPoints: data()
     }]
     }
   

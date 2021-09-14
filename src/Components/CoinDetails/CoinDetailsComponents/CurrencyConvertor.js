@@ -1,22 +1,23 @@
 import React from 'react'
 
-const CurrencyConvertor = () => {
-
-
-    return (
-        <div>
-            <h3 color="text" className=" convertor-container">DOGE to INRConverter</h3>
+const CurrencyConvertor = ({ detail,currentcurrency }) => {
+    
+    const renderCurrencyConvertor = () => {
+        if (detail) {
+            return (
+                <div className="container-size">
+            <h3 color="text" className=" convertor-container">{detail.symbol.toUpperCase()} to INR Converter</h3>
             <div className="  convertor-inner-container">
       
                     <div className="  convertor-inner-inner-container">
                         <div className="  from-container">
-                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt="converter-coin-logo" className=" currency-image" />
+                            <img src={detail.image} alt="converter-coin-logo" className=" currency-image" />
                             <div className=" name-n-logo-container">
                                 <p fontSize="11px" color="text2" className="symbol-container">
-                                    DOGE
+                                {detail.symbol.toUpperCase()}
                                 </p>
                                 <p fontSize="1" fontWeight="500" className="name-convertor converter-item-name" color="text">
-                                    Dogecoin
+                                {detail.name}
                                 </p>
                             </div>
                             <div className="  convertor-input">
@@ -24,13 +25,13 @@ const CurrencyConvertor = () => {
                             </div>
                         </div>
                         <div className="  to-container">
-                            <img src="https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/INR.svg" alt="converter-coin-logo" className=" currency-image" />
+                            <img src={(currentcurrency==="inr")?"https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/INR.svg":"https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/USD.svg"} alt="converter-coin-logo" className=" currency-image" />
                             <div className=" name-n-logo-container">
                                 <p fontSize="11px" color="text2" className="symbol-container">
-                                    INR
+                                    {currentcurrency.toUpperCase()}
                                 </p>
                                 <p fontSize="1" fontWeight="500" className="name-convertor converter-item-name" color="text">
-                                    Indian Rupee
+                                {(currentcurrency==="inr")?"Indian Rupee":"Dollar"}
                                 </p>
                             </div>
                             <div className="  convertor-input">
@@ -41,6 +42,15 @@ const CurrencyConvertor = () => {
               
             </div>
         </div>
+            )
+        }
+    }
+
+
+    return (
+        <>
+        {renderCurrencyConvertor()}
+        </>
     )
 }
 

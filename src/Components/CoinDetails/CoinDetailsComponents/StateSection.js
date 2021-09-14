@@ -1,6 +1,6 @@
 import React from 'react'
 
-const StateSection = ({ detail }) => {
+const StateSection = ({ detail, currentcurrency}) => {
 
     const renderStateComponent = () => {
         if (detail) {
@@ -14,7 +14,7 @@ const StateSection = ({ detail }) => {
                                 </div>
                                 <div className="statsItemRight">
                                     <div className="statsValue">
-                                        ${detail.market_cap}
+                                    &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp;{detail.market_cap}
                                     </div>
                                     <span className=" percent-change">
                                         {detail.market_cap_change_percentage_24h}%
@@ -30,7 +30,7 @@ const StateSection = ({ detail }) => {
                                 </div>
                                 <div className="statsItemRight">
                                     <div className="statsValue">
-                                    $ {detail.total_volume}
+                                    &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {detail.total_volume}
                                     </div>
                                 </div>
                             </div>

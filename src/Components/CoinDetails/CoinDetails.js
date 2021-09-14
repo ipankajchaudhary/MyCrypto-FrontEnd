@@ -9,10 +9,12 @@ import PriceSection from './CoinDetailsComponents/PriceSection'
 import StateSection from './CoinDetailsComponents/StateSection'
 import CurrencyConvertor from './CoinDetailsComponents/CurrencyConvertor'
 import AddInPortfolio from './CoinDetailsComponents/AddInPortfolio'
-const CoinDetails = () => {
+import Spinner from '../assets/Spinner'
+const CoinDetails = ({currentcurrency}) => {
   const { id } = useParams();
   const [coinData, setCoinData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const [timeFormat, setTimeFormat] = useState("24h");
 
   const formatData = (data) => {
     return data.map((el) => {
@@ -22,6 +24,18 @@ const CoinDetails = () => {
       };
     });
   };
+  const determineTimeFormat = () => {
+    switch (timeFormat) {
+      case "24h":
+        return day;
+      case "7d":
+        return week;
+      case "1y":
+        return year;
+      default:
+        return day;
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,25 +43,25 @@ const CoinDetails = () => {
       const [day, week, year, detail] = await Promise.all([
         axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart/`, {
           params: {
-            vs_currency: "inr",
+            vs_currency: currentcurrency,
             days: "1",
           },
         }),
         axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart/`, {
           params: {
-            vs_currency: "inr",
+            vs_currency: currentcurrency,
             days: "7",
           },
         }),
         axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart/`, {
           params: {
-            vs_currency: "inr",
+            vs_currency: currentcurrency,
             days: "365",
           },
         }),
         axios.get("https://api.coingecko.com/api/v3/coins/markets/", {
           params: {
-            vs_currency: "inr",
+            vs_currency: currentcurrency,
             ids: id,
           },
         })
@@ -65,18 +79,21 @@ const CoinDetails = () => {
     fetchData();
 
     // eslint-disable-next-line 
-  }, []);
+  }, [currentcurrency]);
 
   const { detail } = coinData
+  const { day,week,year } = coinData
+  
 
   const renderData = () => {
     if (isLoading) {
-      return <div>Loading....</div>;
+      return <Spinner/>;
     }
     return (
 
       <div className="grid full-width-layout">
         <div className="smallcontainer container">
+     
           <div className="link-container-1">
             <div className="link-container-2">
               <Link to="/Home" className="link-class-1">Cryptocurrencies &nbsp; </Link>
@@ -88,13 +105,13 @@ const CoinDetails = () => {
           </div>
           <div className="upper-container top-summary-container">
             <NameSection detail={detail} />
-            <PriceSection detail={detail} />
-            
-            <StateSection detail={detail} />
+            <PriceSection detail={detail} currentcurrency={ currentcurrency}/>
+
+            <StateSection detail={detail}  currentcurrency={ currentcurrency}/>
             <div className="add-in-portfolio">
-              <CurrencyConvertor />
+              <CurrencyConvertor detail={detail} currentcurrency={ currentcurrency}/>
             </div>
-   
+
             <AddInPortfolio />
           </div>
 
@@ -106,23 +123,19 @@ const CoinDetails = () => {
           </div>
           <div className="chart-options">
 
-            <div variant="roundedSquare" className=" time-picker-container" data-tabs="true">
-              <ul className="react-tabs__tab-list" role="tablist">
-                <li className="react-tabs__tab react-tabs__tab--selected" role="tab" id="react-tabs-0" aria-selected="true" aria-disabled="false" aria-controls="react-tabs-1" tabIndex="0">
-                  1D
-                </li>
-                <li className="react-tabs__tab" role="tab" id="react-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-3">7D</li><li className="react-tabs__tab" role="tab" id="react-tabs-4" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-5">
-                  1M
-                </li>
-
-                <li className="react-tabs__tab" role="tab" id="react-tabs-8" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-9">
-                  1Y
-                </li>
-              </ul>
-            </div>
+              <button type="button" onClick={() => setTimeFormat("24h")} className="btn btn-outline-secondary">
+                24h
+              </button>
+              <button onClick={() => setTimeFormat("7d")} className="btn btn-outline-secondary btn-sm ">
+                7d
+              </button>
+              <button onClick={() => setTimeFormat("1y")} className="btn btn-outline-secondary btn-sm">
+                1y
+              </button>
+           
           </div>
-            <CoinChart data={coinData} />
-          
+          <CoinChart data={determineTimeFormat} />
+
         </div>
       </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PriceSection = ({detail}) => {
+const PriceSection = ({detail,currentcurrency}) => {
 
     const renderpricecomponent = () => {
         if (detail) {
@@ -10,7 +10,7 @@ const PriceSection = ({detail}) => {
                     <div className="priceSection">
                         <h1 className="priceHeading">{detail.name} Price<small>({detail.symbol.toUpperCase()})</small></h1>
                         <div className="priceTitle">
-                            <div className="priceValue ">${detail.current_price}</div>
+                            <div className="priceValue ">{(currentcurrency==="inr")?"₹":"$"}&nbsp;{detail.current_price}</div>
                             <span className=" price-change-btn ud">
                                 <span className=" price-change-btn upd">
                                     {" "}
@@ -28,7 +28,8 @@ const PriceSection = ({detail}) => {
                                     Low:
                                 </span>
                                 <span className=" Low-High-data">
-                                    ${detail.low_24h}
+                                &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp;
+                                    {detail.low_24h}
                                 </span>
                             </div>
 
@@ -36,7 +37,7 @@ const PriceSection = ({detail}) => {
                                 <span className=" Low-High-Text">High:
                                 </span>
                                 <span className=" Low-High-data">
-                                    ${detail.high_24h}
+                                &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp;{detail.high_24h}
                                 </span>
                             </div>
                             <div className=" namePillBase" display="inline-block">24h

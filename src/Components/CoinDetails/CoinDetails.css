@@ -341,7 +341,9 @@ a, a:not([href]):not([tabindex]) {
  .statsBlock .statsBlockInner .statsLabel {
     height: 23px;
 }
-
+.statsBlockInner{
+    display: flex;
+}
  .statsItemRight {
     display: flex;
     -webkit-box-align: center;
@@ -454,6 +456,7 @@ a, a:not([href]):not([tabindex]) {
     -webkit-box-pack: justify;
     justify-content: space-between;
     margin-bottom: 10px;
+    width: 33vw;
 }
 .chart-options h3 {
     height: 40px;
@@ -466,62 +469,9 @@ a, a:not([href]):not([tabindex]) {
     line-height: 28px;
     color: rgb(23, 25, 36);
 }
-.chart-options .table-control-left {
-    display: flex;
-    flex-direction: row;
-    -webkit-box-align: center;
-    align-items: center;
+.chart-options button{
+    width: 4x;
 }
-.time-picker-container .react-tabs__tab-list {
-    box-shadow: none;
-    background: rgb(239, 242, 245);
-    padding: 3px;
-    border-radius: 8px;
-    margin: 0px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
-ul, ol {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-.chart-options .react-tabs__tab {
-    padding: 7px 8px;
-    white-space: nowrap;
-    color: rgb(88, 102, 126);
-}
-
-.time-picker-container .react-tabs__tab--selected {
-    background: rgb(255, 255, 255);
-    color: rgb(23, 25, 36);
-    box-shadow: rgb(239 242 245) 0px 1px 0px;
-    font-weight: 600;
-}
-
-.time-picker-container .react-tabs__tab {
-    border-top: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-image: initial;
-    border-bottom: none;
-    bottom: 0px;
-    position: relative;
-    list-style: none;
-    cursor: pointer;
-    border-radius: 8px;
-    font-weight: 600;
-    display: flex;
-    flex: 1 1 0%;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    font-size:18px;
-    padding: 5px 24px;
-}
-
 /* Convertor */
 
 .convertor-container {
@@ -606,6 +556,7 @@ p {
     -webkit-box-pack: end;
     justify-content: flex-end;
     color: rgb(23, 25, 36);
+    /* width: 50%; */
 }
 
 .input-class {
@@ -619,8 +570,13 @@ p {
     color: rgb(23, 25, 36);
     font-weight: 700;
     font-family: Inter, sans-serif;
-    width: 100%;
+    width: 200px;
 }
+.input-class:focus{
+    border: none;
+    outline: none;
+}
+
 .to-container {
     box-sizing: border-box;
     margin: 0px;
@@ -741,7 +697,7 @@ p {
         padding-top: 8px;
     }
     .statsItemRight {
-        display: block;
+        display: flex;
     }
     .second-stateBlock {
         grid-column: span 12 / auto;
@@ -749,6 +705,9 @@ p {
         padding-left: 0px;
         margin-top: 12px;
         margin-bottom: 8px;
+    }
+    .container-size{
+        width: 500px;
     }
 
 }
@@ -856,5 +815,6 @@ p {
     }
     .chart-options{
         margin-top: 10px;
+        width: 100%;
     }
 }

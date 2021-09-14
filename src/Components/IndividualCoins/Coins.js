@@ -4,7 +4,7 @@ import "./Coinsstyle.css";
 import { Link } from 'react-router-dom';
 
 
-const Coins = ({ coin }) => {
+const Coins = ({ coin ,currentcurrency}) => {
     
 
     return (
@@ -16,20 +16,20 @@ const Coins = ({ coin }) => {
                 <tr>
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link"> ₹ {coin.current_price}</Link>
+                            <Link to="/Cryptocurrencies" className="cmc-link"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.current_price}</Link>
                         </div>
                     </td>
 
 
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link"> ₹ {coin.high_24h}</Link>
+                            <Link to="/Cryptocurrencies" className="cmc-link"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.high_24h}</Link>
                         </div>
                     </td>
 
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link">  ₹ {coin.low_24h}</Link>
+                            <Link to="/Cryptocurrencies" className="cmc-link">  &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.low_24h}</Link>
                         </div>
                     </td>
                     <td>
@@ -43,7 +43,7 @@ const Coins = ({ coin }) => {
                     </td>
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
-                            <Link to="/Cryptocurrencies" className="cmc-link">  ₹ {coin.market_cap_change_24h}</Link>
+                            <Link to="/Cryptocurrencies" className="cmc-link">  &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.market_cap_change_24h}</Link>
                         </div>
                     </td>
                     <td>

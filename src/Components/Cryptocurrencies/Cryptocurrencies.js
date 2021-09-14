@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 // import CoinDetails from '../CoinDetails/CoinDetails';
 // import background from "../public/Logo/background.png";
 
-const Cryptocurrencies = () => {
+const Cryptocurrencies = ({currentcurrency}) => {
 
     const [coins, setCoins] = useState([])
     
@@ -18,7 +18,7 @@ const Cryptocurrencies = () => {
         const fetchData1= async () => {
             const response = await axios.get("https://api.coingecko.com/api/v3/coins/markets", {
                 params: {
-                    vs_currency: "inr",
+                    vs_currency: currentcurrency,
                 }
             })
             
@@ -27,7 +27,7 @@ const Cryptocurrencies = () => {
         }
          fetchData1();
        
-    }, [])
+    }, [currentcurrency])
   
     // console.log(coins)
     return (
@@ -112,7 +112,7 @@ const Cryptocurrencies = () => {
                             {coins.map((coin) => {
                                 return (
                                     <>
-                                        <Coins key={coin.id} coin={coin} />
+                                        <Coins key={coin.id} coin={coin} currentcurrency={currentcurrency}/>
                                        
                                     </>
                                 )

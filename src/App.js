@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./Components/NavBar/Navbar";
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Login from "./Components/Login/Login";
 import SignUp from "./Components/SignUp/SignUp";
@@ -9,18 +9,21 @@ import CoinDetails from "./Components/CoinDetails/CoinDetails";
 // import Cryptocurrencies from "./Components/Cryptocurrencies/Cryptocurrencies";
 
 function App() {
+
+  const [currency, setcurrency] = useState("inr")
+
   return (
     <Router>
-      <Navbar />
+      <Navbar currentcurrency={currency} changecurrency={setcurrency}/>
      
       <Switch>
         <Route path="/Home">
           
-          <Cryptocurrencies />
+          <Cryptocurrencies currentcurrency={currency}/>
         </Route>
         <Route path="/Cryptocurrencies">
           <Redirect to="/Home" />
-          <Cryptocurrencies />
+          <Cryptocurrencies currentcurrency={currency}/>
         </Route>
         <Route path="/Login">
 
@@ -33,7 +36,7 @@ function App() {
 
         <Route path="/Coins/:id">
 
-          <CoinDetails />
+          <CoinDetails currentcurrency={currency}/>
         </Route>
       </Switch>
     </Router>
