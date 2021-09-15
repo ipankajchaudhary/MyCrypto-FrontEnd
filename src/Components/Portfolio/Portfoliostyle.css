@@ -1,0 +1,95 @@
+
+.inner-container {
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.link-main-container {
+    box-sizing: border-box;
+    margin: 0px 0px 16px;
+}
+.container-down {
+    box-sizing: border-box;
+    margin: 0px;
+    /* display: block; */
+    block-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.container-down-inner {
+    /* display: block; */
+    width: 100%;
+}
+.container-down-inner .left-actions {
+    height: 460px;
+    padding-top: 104px;
+}
+/* 
+
+.container-down-inner > div {
+    block: 1 1 0%;
+} */
+
+.container-down-inner .left-actions .sign-up {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-primary-blue);
+}
+
+.container-down-inner .left-actions h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 42px;
+    margin: 16px 0px;
+}
+.container-down-inner .left-actions p {
+    /* width: 449px; */
+    margin-bottom: 40px;
+}
+
+
+.text-container {
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(88, 102, 126);
+    font-size: 16px;
+}
+
+.create-portfolio-btn {
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(56, 97, 251);
+    border: 0px;
+    border-radius: 8px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    font-weight: 600;
+    width: auto;
+    height: 48px;
+    font-size: 14px;
+    padding: 0px 24px;
+    line-height: 24px;
+    margin-right: 8px;
+}
+
+.login-button{
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    font-weight: 900;
+    margin-left: 10px;
+    /* margin-top: 20px; */
+}
+
+.login-button:hover{
+    background-color: rgb(187, 183, 183);
+    border-radius: 10px;
+    /* border: 2px solid rebeccapurple; */
+}
