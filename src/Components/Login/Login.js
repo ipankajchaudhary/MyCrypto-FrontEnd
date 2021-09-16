@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-// import Navbar from "../../NavBar/Navbar";
-// import { Link } from "react-router-dom";
 import "./Loginstyle.css";
-import { Link ,useHistory } from "react-router-dom";
-// import { useState } from "react";
-// import ReactDOM from 'react-dom' 
+import { Link ,useHistory } from "react-router-dom"
 
-const Login = ({changeloggedin , currentlyauthtoken, changeauthtoken}) => {
+const Login = ({changeloggedin , changeauthtoken}) => {
   const [credentials, setCredentials] = useState({email: "", password: ""}) 
     let history = useHistory();
   const [wrongcredentials, setwrongcredentials] = useState("false")
@@ -27,22 +23,18 @@ const Login = ({changeloggedin , currentlyauthtoken, changeauthtoken}) => {
         history.push("/Home");
         changeloggedin("true");
         console.log("Logged in")
+        console.log(localStorage.getItem('token'))
+
       }
       else {
         setwrongcredentials("true")
         console.log("wrongcredentials")
       }
-            // Save the auth token and redirect
     }
-
     const onChange = (e)=>{
         setCredentials({...credentials, [e.target.name]: e.target.value})
     }
-
-
-  
-  // var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
-  return (
+    return (
     <>
       <div className="login">
         <div className="LoginTitle"> <h3><b> Log In</b></h3></div>
@@ -64,8 +56,6 @@ const Login = ({changeloggedin , currentlyauthtoken, changeauthtoken}) => {
             <p className={(wrongcredentials === "false" ? "d-none" : "text-danger")}>Wrong Credentials</p>
           <button type="submit" className="btn btn-primary">Log In</button>
           </div>
-          
-
         </form>
       </div>
     </>

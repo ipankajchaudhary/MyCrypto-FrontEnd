@@ -1,7 +1,84 @@
-import React from 'react';
+import React,  { useState } from 'react';
 import './Portfoliostyle.css'
-const Portfolio = ({ currentlyloggedin }) => {
+const Portfolio = ({ currentlyloggedin , currentlyauthtoken }) => {
 
+  const host = "http://localhost:5000"
+  const portfolioInitial = []
+  const [portfolio, setPortfolio] = useState(portfolioInitial)
+
+  // Get all Portfolio
+  const getPortfolio = async () => {
+    // API Call 
+    const response = await fetch(`${host}/api/portfolio/fetchallportfolios`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+          "auth-token":  localStorage.getItem('token')
+            //   localStorage.getItem('token')
+      }
+    });
+      const json = await response.json()
+    setPortfolio(json)
+  }
+
+  // Add a Portfolio
+  const addPortfolio = async (coinid, amount, tag) => {
+    // TODO: API Call
+    // API Call 
+    const response = await fetch(`${host}/api/portfolio/addportfolio`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      },
+      body: JSON.stringify({coinid, amount, tag})
+    });
+
+    const portfolio = await response.json();
+    setPortfolio(portfolio.concat(portfolio))
+  }
+
+  // Delete a Portfolio
+  const deletePortfolio = async (id) => {
+    // API Call
+    const response = await fetch(`${host}/api/portfolio/deleteportfolio/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      }
+    });
+    const json = response.json(); 
+    const newPortfolio = portfolio.filter((portfolio) => { return portfolio._id !== id })
+    setPortfolio(newPortfolio)
+  }
+
+  // Edit a Portfolio
+  const editPortfolio = async (id, coinid, amount) => {
+    // API Call 
+    const response = await fetch(`${host}/api/portfolio/updateportfolio/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      },
+      body: JSON.stringify({coinid, amount})
+    });
+    const json = await response.json(); 
+
+     let newPortfolio = JSON.parse(JSON.stringify(portfolio))
+    // Logic to edit in client
+    for (let index = 0; index < newPortfolio.length; index++) {
+      const element = newPortfolio[index];
+      if (element._id === id) {
+        newPortfolio[index].coinid = coinid;
+        newPortfolio[index].amount = amount;
+        break; 
+      }
+    }  
+    setPortfolio(newPortfolio);
+  }
+ 
 
 
 
@@ -53,18 +130,19 @@ const Portfolio = ({ currentlyloggedin }) => {
         )
     }
 
+    console.log(portfolio)
 
     const renderIfloggedin = () => {
         return (
             <div>
-                Logged in
+
             </div>
         )
     }
 
     return (
         <>
-            {currentlyloggedin === "true" ? renderIfloggedin() : renderifnotloggedin()}
+            {(localStorage.getItem('token')) ? renderIfloggedin() : renderifnotloggedin()}
         </>
         
     )

@@ -20,7 +20,10 @@
     position: relative;
     top: 30%;
 }
+.watchlist-icon-container-upper{
+    border-bottom: 1px solid #eff2f5;
 
+}
 .logo-name-box{
     text-align: left;
   
@@ -31,6 +34,7 @@
 }
 .for-hover{
     height: 80px;
+    display: flex;
 }
 .for-hover:hover{
     background-color: rgb(219, 220, 223);
@@ -159,4 +163,13 @@
     padding: 10px;
     align-items: right;
  
+}
+@media screen and (min-width: 768px){
+    .watchlist-icon-12{
+        position: relative;
+        top: 20%;
+    }
+    .index{
+        top: 0%;
+    }
 }

@@ -19,7 +19,6 @@ function SignUp({currentlyloggedin, changeloggedin ,currentlyauthtoken, changeau
         });
         const json = await response.json()
         changeauthtoken(json.authtoken)
-        console.log(json);
             // Save the auth token and redirect
         localStorage.setItem('token', json.authtoken); 
         history.push("/Home");
@@ -30,18 +29,6 @@ function SignUp({currentlyloggedin, changeloggedin ,currentlyauthtoken, changeau
     const onChange = (e)=>{
         setCredentials({...credentials, [e.target.name]: e.target.value})
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
     return (
         <div>

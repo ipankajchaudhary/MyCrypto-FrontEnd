@@ -1,0 +1,17 @@
+.decrease-flex-23{
+flex: 0 0 23%;
+}
+.decrease-flex-21{
+flex: 0 0 21%;
+}
+.decrease-flex-50{
+flex: 0 0 50%;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .responsive{
+        flex-direction: column;
+        width: 87vw;
+    }
+}

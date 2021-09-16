@@ -1,17 +1,13 @@
 import React from 'react';
 import "./Coinsstyle.css";
 
-import { div } from 'react-router-dom';
-
-
-const Coins = ({ coin ,currentcurrency}) => {
+const Coins = ({ coin, currentcurrency }) => {
+    
+    
     
 
     return (
         <>
-
-
-
             <tbody>
                 <tr>
                     <td>
@@ -19,8 +15,6 @@ const Coins = ({ coin ,currentcurrency}) => {
                             <div className="cmc-div"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.current_price}</div>
                         </div>
                     </td>
-
-
                     <td>
                         <div className="sc-131di3y-0 cLgOOr">
                             <div className="cmc-div"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.high_24h}</div>
@@ -51,17 +45,8 @@ const Coins = ({ coin ,currentcurrency}) => {
                             <div className="cmc-div">{coin.circulating_supply}</div>
                         </div>
                     </td>
-                   
-                    
-                    
-                    
-                    
-
                 </tr>
             </tbody>
-
-
-
         </>
     )
 }

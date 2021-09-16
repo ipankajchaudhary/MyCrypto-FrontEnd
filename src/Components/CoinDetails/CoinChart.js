@@ -7,18 +7,11 @@ const CoinChart = ({ data }) => {
     animationEnabled: true,
     theme: "light1", // "light1", "dark1", "dark2"
     zoomEnabled: true,
-    // zoomType: "xy",
-    // title:{
-    //     text: "Bounce Rate by Week of Year"
-    //   },
       exportEnabled: false,
       axisY: {
         tickLength :0,
 
         gridThickness: 0,
-          // lineThickness: 0,
-          
-        // title: "Bounce Rate",
         includeZero: false,
         suffix: ""
     },
@@ -26,10 +19,6 @@ const CoinChart = ({ data }) => {
         // title: "Week of Year",
       prefix: "",
       ValueFormatString: "MMM YYYY",
-        // tickLength :0,
-        // gridThickness: 0,
-          // lineThickness: 0,
-         
         interval: 3
     },
     data: [{
@@ -42,13 +31,9 @@ const CoinChart = ({ data }) => {
       dataPoints: data()
     }]
     }
-  
- 
     return (
       <div>
-        <CanvasJSChart options = {options} 
-				/* onRef={ref => this.chart = ref} */
-			/>
+        <CanvasJSChart options = {options}/>
 		
         
         </div>
