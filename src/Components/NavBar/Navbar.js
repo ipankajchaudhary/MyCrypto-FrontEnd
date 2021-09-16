@@ -25,7 +25,7 @@ const Navbar = ({ currentcurrency, changecurrency, currentlyloggedin, changelogg
         changeauthtoken(" ")        
     }
     return (
-        <div style={{height}}>
+        <div className="header">
             <nav className="navbar navbar-expand-lg navbar-light  bg-white" style={{ height: "52px" }}>
                 <div className="container-fluid" style={{ backgroundColor: "#ffffff", borderBottom: "1px solid #eaeaea" }}>
                     <img className="main-logo mx-4 navbar-brand" src="https://user-images.githubusercontent.com/65165139/132937951-9e08e004-4943-4410-a80d-66b4e812b1f7.png" alt="Logo" />
