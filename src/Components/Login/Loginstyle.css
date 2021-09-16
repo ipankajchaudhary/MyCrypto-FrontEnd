@@ -6,7 +6,7 @@
     left: 0;
     right: 0;
     width: 40%;
-    height: 60%;
+    height: 417px;
     margin: auto;
     border: 2px solid #eaeaea;
     border-radius: 20px;
@@ -60,8 +60,9 @@
 @media only screen and (max-device-width: 480px) {
     .login{
         width: 90%;
-        height: 50%;
+        height: 385px;
         padding-left: 15px;
+        margin-top: 151px;
     }
     .LoginTitle{
         margin-top: 10px;

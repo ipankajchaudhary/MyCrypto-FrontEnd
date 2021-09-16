@@ -48,6 +48,7 @@ const WatchlistState = (props) => {
         "auth-token": localStorage.getItem('token')
       }
     });
+         // eslint-disable-next-line
     const json = response.json(); 
     const newWatchlists = watchlists.filter((watchlist) => { return watchlist._id !== id })
     setWatchlists(newWatchlists)
@@ -64,6 +65,7 @@ const WatchlistState = (props) => {
       },
       body: JSON.stringify({coinid})
     });
+         // eslint-disable-next-line
     const json = await response.json(); 
 
      let newWatchlists = JSON.parse(JSON.stringify(watchlists))

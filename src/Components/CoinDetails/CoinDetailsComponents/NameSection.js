@@ -5,7 +5,7 @@ const NameSection = ({ detail }) => {
 
     const context = useContext(watchlistContext);
     const {addWatchlist} = context;
-
+    // eslint-disable-next-line
     const [watchlist, setWatchlist] = useState({ coinid: "" })
     const [turnyellow, setturnyellow] = useState("false")
 
@@ -15,7 +15,7 @@ const NameSection = ({ detail }) => {
         setWatchlist({ coinid: "" })
         setturnyellow("true")
     }
-
+    
     const renderthiscomponent = () => {
         if (detail) {
             return (

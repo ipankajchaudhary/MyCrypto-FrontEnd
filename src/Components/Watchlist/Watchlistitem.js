@@ -1,9 +1,6 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
-import watchlistContext from '../Context/watchlistContext';
-import CoinLogo from './IndividualCoins/CoinLogo';
-import Coins from './IndividualCoins/Coins';
+import watchlistContext from '../../Context/watchlistContext';
 import './Watchlistitemstyle.css'
 
 const Watchlistitem = (props) => {
@@ -12,6 +9,7 @@ const Watchlistitem = (props) => {
 
     const context = useContext(watchlistContext);
     const { deleteWatchlist } = context;
+         // eslint-disable-next-line
     const { watchlist, updateWatchlist } = props;
     const { currentcurrency } = props
     const [coins, setCoins] = useState([])
@@ -31,7 +29,7 @@ const Watchlistitem = (props) => {
             setCoins(response.data);
         }
         fetchData1();
-
+             // eslint-disable-next-line
     }, [currentcurrency])
 
 

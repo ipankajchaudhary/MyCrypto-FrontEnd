@@ -10,7 +10,7 @@ const CoinLogo = ({ coin }) => {
     const { addWatchlist } = context;
     const [turnyellow, setturnyellow] = useState("false")
 
-
+    // eslint-disable-next-line
     const [watchlist, setWatchlist] = useState({ coinid: "" })
 
     const handleClick = (e) => {
@@ -24,11 +24,11 @@ const CoinLogo = ({ coin }) => {
     return (
         <>
             <div className="for-hover">
-                <span class="watchlist-icon-container-upper">
-                    <button class="watchlist-icon watchlist-icon-12 watchlistbtn" style={{ border: "none" }} onClick={handleClick}>
-                        <span class="icon-Star-Filled">
+                <span className="watchlist-icon-container-upper">
+                    <button className="watchlist-icon watchlist-icon-12 watchlistbtn" style={{ border: "none" }} onClick={handleClick}>
+                        <span className="icon-Star-Filled">
                             {" "}
-                            {(turnyellow === "true") ? <i class="fa fa-star yellow-color " style={{ color: "blue" }} ></i> : <i class="fa fa-star"></i>}
+                            {(turnyellow === "true") ? <i className="fa fa-star yellow-color " style={{ color: "blue" }} ></i> : <i className="fa fa-star"></i>}
                         </span>
                     </button>
                 </span>

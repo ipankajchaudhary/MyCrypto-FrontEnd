@@ -1,4 +1,5 @@
 import React,  { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Portfoliostyle.css'
 const Portfolio = ({ currentlyloggedin , currentlyauthtoken }) => {
 
@@ -79,9 +80,6 @@ const Portfolio = ({ currentlyloggedin , currentlyauthtoken }) => {
     setPortfolio(newPortfolio);
   }
  
-
-
-
     const renderifnotloggedin = () => {
         return (
             <div className="grid full-width-layout">
@@ -115,10 +113,10 @@ const Portfolio = ({ currentlyloggedin , currentlyauthtoken }) => {
                                     </p>
                                     <div>
                                         <button className=" create-portfolio-btn">
-                                            <b>+</b> &nbsp;Create your Portfolio
+                                        <Link to="/Signup"><b>+</b> &nbsp;Create your Portfolio</Link>
                                         </button>
                                         <button className="login-button">
-                                            <b> Log In</b>
+                                        <Link to="/Login"><b> Log In</b></Link>
                                         </button>
                                     </div>
                                 </div>

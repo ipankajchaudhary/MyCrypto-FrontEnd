@@ -6,7 +6,8 @@
     left: 0;
     right: 0;
     width: 35%;
-    height: 81%;
+    height: 558px;
+    margin-top: 80px;
     margin: auto;
     border: 2px solid #eaeaea;
     border-radius: 20px;
@@ -81,8 +82,9 @@ input{
 @media only screen and (max-device-width: 480px) {
     .signup{
         width: 90%;
-        height: 79%;
+        height: 556px;
         padding-left: 15px;
+        margin-top: 75px;
     }
     .Head{
         margin-top: 10px;

@@ -23,6 +23,7 @@ div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
     margin-left: -20px;
+    overflow-y: hidden
   }
   .okc{
     justify-content: center;
