@@ -1,72 +1,108 @@
-# Getting Started with Create React App
+# MyCrypto - CryptoCurrencies Portfolio Manager
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/public/favicon.ico)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is MyCrypto?
 
-## Available Scripts
+MyCrypto is a price - tracking website for cryptoassets with the features of adding coins to the portfolios. Users can mark their faviourite coins in their watchlist.
+The main motto of MyCrypto is to CREATE, READ, UPDATE,DELETE portfolios and watchlists.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# `Glimpses of the UI`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Landing Page
 
-### `npm test`
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/landing-page.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## CryptoCurrencies Table
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/coin-table.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Detail of Every Coin
 
-### `npm run eject`
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/coin-detail.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Coin-Chart
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/coin-chart.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Portfolio if not logged in
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/portfolio-without-login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Watchlist if not logged in
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/watchlist-without-login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Portfolio if logged in
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-fdgfdgsggfsfdg
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/portfolio-with-login.png)
+
+
+
+## Making a Portfolio
+
+
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/Adding-coins%20in-portfolio.png)
+
+
+## Watchlist if logged in
+
+
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/watchlist-with-login.png)
+
+
+
+## Adding in Watchlist
+
+
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/adding-coins-watchlist.png)
+
+
+
+## Login Page
+
+
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/login.png)
+
+
+
+
+## Sign up page
+
+
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/sign-up.png)
+
+## About ME
+
+
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/About-me.png)
+
+
+
+
+# `TECH STACK` 
+
+####• Express.js
+####• Node.js
+####• MongoDB
+####• React.js
+####• Bootstrap
+####• Material UI
+####• Canvas js
+
+#Made with :sparkling_heart: and 	&lt; /Code &gt; by Pankaj Chaudhary
