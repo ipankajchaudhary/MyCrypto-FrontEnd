@@ -110,6 +110,6 @@ The main motto of MyCrypto is to CREATE, READ, UPDATE,DELETE portfolios and watc
 • React.js\
 • Bootstrap\
 • Material UI\
-• Canvas js\
+• Canvas js
 
-#Made with :sparkling_heart: and 	&lt; /Code &gt; by Pankaj Chaudhary
+Made with :sparkling_heart: and 	&lt; /Code &gt; by Pankaj Chaudhary
