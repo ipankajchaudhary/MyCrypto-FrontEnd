@@ -1,5 +1,5 @@
 import React from 'react';
-import CanvasJSReact from '../assets/canvasjs.react';
+import CanvasJSReact from '../../assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
 const CoinChart = ({ data }) => {
@@ -34,8 +34,6 @@ const CoinChart = ({ data }) => {
     return (
       <div>
         <CanvasJSChart options = {options}/>
-		
-        
         </div>
     )
 }

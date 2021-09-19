@@ -8,7 +8,10 @@ const Watchlists = ({ currentcurrency }) => {
          // eslint-disable-next-line
     const { watchlists, getWatchlists, editWatchlist } = context;
     useEffect(() => {
-        getWatchlists()
+
+        if (localStorage.getItem('token')) {
+            getWatchlists()
+        }
         // eslint-disable-next-line
     }, [currentcurrency])
     const ref = useRef(null)
@@ -23,9 +26,8 @@ const Watchlists = ({ currentcurrency }) => {
     }
     var stylingObject = {
         h3: {
-            position: "relative",
-            left: "35vw",
-            width: "300px"
+            display: "table",
+            margin: "auto"
         }
     }
 
@@ -35,13 +37,13 @@ const Watchlists = ({ currentcurrency }) => {
                 <div className="inner-container">
                     <div className="link-main-container">
                         <div className="link-container-1">
-                            <div class="link-container-2">
-                                <a class="link-class-1" href="/Home">
+                            <div className="link-container-2">
+                                <a className="link-class-1" href="/Home">
                                     Home &nbsp;
                                 </a>
-                                <i class="fas fa-chevron-right" aria-hidden="true">
+                                <i className="fas fa-chevron-right" aria-hidden="true">
                                 </i>
-                                <span font-size="2,3" color="text" class="link-class-1">
+                                <span fontSize="2,3" color="text" className="link-class-1">
                                     Watchlist
                                 </span>
                             </div>
@@ -57,7 +59,7 @@ const Watchlists = ({ currentcurrency }) => {
                                     <h1>
                                         Crypto Tracker
                                     </h1>
-                                    <p font-size="16" color="neutral6" className="text-container">
+                                    <p fontSize="16" color="neutral6" className="text-container">
                                         Keep track of your favourite cryptocurrency | Add them in your Watchlist
                                     </p>
                                     <div>
@@ -78,12 +80,13 @@ const Watchlists = ({ currentcurrency }) => {
             </div>
         )
     }
+
     const render = () => {
         if (watchlists) {
             return (
-                <div className="row my-3">
+                <div className="row my-3" style={{marginTop:"53px"}}>
 
-                    {(watchlists.length === 0) ? <div><h3 style={stylingObject.h3}>Your watchlist is empty</h3> <br />  <b> <p style={stylingObject.h3}>Start building your watchlist now</p> </b></div> : <h2 style={stylingObject.h3}>Your Watchlists</h2>}
+                    {(watchlists.length === 0) ? <div><h3 style={stylingObject.h3}>Your watchlist is empty</h3> <br />  <b> <p style={stylingObject.h3}>Start building your watchlist now</p> </b></div> : <div className="container"><h2 style={stylingObject.h3}>Your Watchlists</h2></div>}
                     <div className="container mx-2">
                     </div>
                     {watchlists.map((watchlist) => {
@@ -94,8 +97,9 @@ const Watchlists = ({ currentcurrency }) => {
         }
     }
     return (
-        <>
-        {(localStorage.getItem('token')) ? render() : renderifnotloggedin()}
+        <><div style={{height:"fit-content"}}>
+            {(localStorage.getItem('token')) ? render() : renderifnotloggedin()}
+        </div>
         </>
     )
 }

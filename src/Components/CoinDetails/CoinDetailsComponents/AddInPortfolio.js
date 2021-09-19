@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AddInPortfolio = () => {
     return (
         <div>
-            <button className="btn btn-primary">+ Add in Portfolio</button>
+            <Link to="/Portfolio"><button className="btn btn-primary">+ Add in Portfolio</button></Link>
         </div>
     )
 }

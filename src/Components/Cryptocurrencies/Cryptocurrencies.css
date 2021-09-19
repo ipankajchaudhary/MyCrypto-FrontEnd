@@ -59,6 +59,7 @@ a{
     border-bottom: 2px solid #eff2f5;
     border-top: 2px solid #eff2f5;
     height: 46px;
+    padding-left: 58px;
 }
 .cmc-link{
     position: relative;
@@ -89,3 +90,37 @@ a{
     }
 
 }
+@media only screen and (min-device-width: 1200px) {
+    .Container{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-device-width: 1200px) {
+}   
+
+.prcnt{
+  padding-left: 19px;
+}
+
+
+@media only screen and (min-device-width: 1200px) {
+    .Table-header {
+        border-bottom: 2px solid #eff2f5;
+        border-top: 2px solid #eff2f5;
+        height: 46px;
+        /* padding-left: 67px; */
+        padding-left: 74px;
+    }
+    .dwn{
+        padding-left: 0px;
+        justify-content: left;
+        position: relative;
+        left: -2%;
+    }
+    .prcnt{
+        padding-left: 0px;
+    position: relative;
+    left: -4%;
+    }
+} 

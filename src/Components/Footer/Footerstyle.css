@@ -1,0 +1,17 @@
+footer{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(235, 195, 64);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 20vh;
+  }
+  .site-footer {
+    background-color:rgb(25 ,118,210);
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #dfdbdb;
+}

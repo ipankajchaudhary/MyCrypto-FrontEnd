@@ -9,9 +9,10 @@ flex: 0 0 50%;
 }
 
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 1285px) {
     .responsive{
         flex-direction: column;
         width: 87vw;
     }
 }
+

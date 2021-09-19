@@ -10,7 +10,7 @@
   height: 80px;
   font-weight: 500;
   position: relative;
-  top: -4px
+  /* top: -4px */
 }
 .index p{
     line-height: 1.5;
@@ -172,4 +172,10 @@
     .index{
         top: 0%;
     }
+}
+
+@media only screen and (max-device-width: 1200) {
+.index{
+    display: none
+}
 }

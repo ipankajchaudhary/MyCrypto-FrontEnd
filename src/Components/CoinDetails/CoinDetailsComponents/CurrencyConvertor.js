@@ -39,7 +39,7 @@ const CurrencyConvertor = ({ detail, currentcurrency }) => {
                                     </p>
                                 </div>
                                 <div className="  convertor-input">
-                                    <input type="number" pattern="/^-?d+.?d*$/" maxLength="8" className=" input-class" value={from * detail.current_price} />
+                                    <input type="number" pattern="/^-?d+.?d*$/" maxLength="8" className=" input-class" value={from * detail.current_price} readOnly/>
                                 </div>
                             </div>
                         </div>

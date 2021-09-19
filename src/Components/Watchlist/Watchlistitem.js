@@ -3,9 +3,12 @@ import React, { useContext, useEffect, useState } from 'react'
 import watchlistContext from '../../Context/watchlistContext';
 import './Watchlistitemstyle.css'
 
+
 const Watchlistitem = (props) => {
 
     // const {currentcurrency} = currentcurrency
+
+
 
     const context = useContext(watchlistContext);
     const { deleteWatchlist } = context;
@@ -47,7 +50,8 @@ const Watchlistitem = (props) => {
                             <div display="flex fw" className="rank-container">
                                 <div className="namePill namePillPrimary">Rank #{coins[0].market_cap_rank}</div>
                                 <div className="namePill" >Coin</div>
-                                <i className="far fa-trash-alt mx-2" onClick={() => { deleteWatchlist(watchlist._id) }}></i>
+                                <i style={{cursor:"pointer"}}className="far fa-trash-alt mx-2" onClick={() => { deleteWatchlist(watchlist._id) }}></i>
+                                <div className="text-danger"> <b>Delete</b> </div>
                             </div>
                         </div>
                         <div className="priceSection decrease-flex-21">

@@ -4,7 +4,7 @@ import Coins from '../IndividualCoins/Coins';
 import CoinLogo from '../IndividualCoins/CoinLogo';
 import "../IndividualCoins/Coinsstyle.css"
 import "../Cryptocurrencies/Cryptocurrencies.css";
-import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 
 const Cryptocurrencies = ({ currentcurrency }) => {
@@ -28,7 +28,7 @@ const Cryptocurrencies = ({ currentcurrency }) => {
     }, [currentcurrency])
 
     return (
-
+        <>
         <div>
             <div className="header-image" >
                 <div>
@@ -37,7 +37,7 @@ const Cryptocurrencies = ({ currentcurrency }) => {
                     <div className="fs-4 float-left"> Check the latest rates before you buy. The table below shows how different cryptocurrencies are performing in real-time.
                     </div>
                 </div>
-          </div>
+            </div>
             <div className="Container setMargin">
                 <div className="d-flex flex-row bd-highlight mb-3">
                     <div className="p-2 bd-highlight">
@@ -45,13 +45,13 @@ const Cryptocurrencies = ({ currentcurrency }) => {
                             <tbody>
                                 <tr>
                                     <td className="Table-header" style={{ width: "42px" }}>
-                                        <div className="sc-131di3y-0 cLgOOr" >
-                                            <Link to="/Cryptocurrencies" className="cmc-link">#</Link>
+                                        <div >
+                                            #
                                         </div>
                                     </td>
                                     <td className="Table-header" style={{ width: "220px" }}>
                                         <div className="sc-131di3y-0 cLgOOr okc">
-                                            <Link to="/Cryptocurrencies" className="cmc-link">Name</Link>
+                                            Name
                                         </div>
                                     </td>
                                 </tr>
@@ -66,33 +66,33 @@ const Cryptocurrencies = ({ currentcurrency }) => {
                         <table>
                             <tbody>
                                 <tr>
-                                    <td className="Table-header">
-                                        <div className="sc-131di3y-0 cLgOOr">
-                                            <Link to="/Cryptocurrencies" className="cmc-link">Price</Link>
-                                        </div>
+                                    <td className="Table-header p">
+
+                                        Price
+
                                     </td>
-                                    <td className="Table-header">
-                                        <div className="sc-131di3y-0 cLgOOr">
-                                            <Link to="/Cryptocurrencies" className="cmc-link">24 hrs   <i className="fas fa-sort-up align-middle mr-3 text-success"></i>
-                                            </Link>
-                                        </div>
-                                    </td><td className="Table-header">
-                                        <div className="sc-131di3y-0 cLgOOr">
-                                            <Link to="/Cryptocurrencies" className="cmc-link">24 hrs
-                                                <i className="fas fa-sort-down align-middle mr-3 text-danger"></i> </Link>
-                                        </div>
-                                    </td><td className="Table-header">
-                                        <div className="sc-131di3y-0 cLgOOr" style={{ width: "135px" }} >
-                                            <Link to="/Cryptocurrencies" className="cmc-link">24 hrs %</Link>
-                                        </div>
-                                    </td><td className="Table-header">
-                                        <div className="sc-131di3y-0 cLgOOr" style={{ width: "140px" }}>
-                                            <Link to="/Cryptocurrencies" className="cmc-link">Market Cap</Link>
-                                        </div>
-                                    </td><td className="Table-header">
-                                        <div className="sc-131di3y-0 cLgOOr" style={{ width: "140px" }}>
-                                            <Link to="/Cryptocurrencies" className="cmc-link">Volume</Link>
-                                        </div>
+                                    <td className="Table-header up">
+
+                                        24 hrs   <i className="fas fa-sort-up align-middle mr-3 text-success"></i>
+
+
+                                    </td><td className="Table-header dwn">
+
+                                        24 hrs
+                                        <i className="fas fa-sort-down align-middle mr-3 text-danger"></i>
+
+                                    </td><td className="Table-header prcnt">
+
+                                        24 hrs %
+
+                                    </td><td className="Table-header mc">
+
+                                        Market Cap
+
+                                    </td><td className="Table-header v">
+
+                                        Volume
+
                                     </td>
                                 </tr>
                             </tbody>
@@ -114,7 +114,9 @@ const Cryptocurrencies = ({ currentcurrency }) => {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+            <Footer/>
+        </>
     )
 }
 

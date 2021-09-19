@@ -9,7 +9,7 @@ import PriceSection from './CoinDetailsComponents/PriceSection'
 import StateSection from './CoinDetailsComponents/StateSection'
 import CurrencyConvertor from './CoinDetailsComponents/CurrencyConvertor'
 import AddInPortfolio from './CoinDetailsComponents/AddInPortfolio'
-import Spinner from '../assets/Spinner'
+import Spinner from '../../assets/Spinner'
 const CoinDetails = ({currentcurrency}) => {
   const { id } = useParams();
   const [coinData, setCoinData] = useState({});
@@ -90,6 +90,7 @@ const CoinDetails = ({currentcurrency}) => {
       return <Spinner/>;
     }
     return (
+      <>
 
       <div className="grid full-width-layout">
         <div className="smallcontainer container">
@@ -138,12 +139,16 @@ const CoinDetails = ({currentcurrency}) => {
 
         </div>
       </div>
+      
+      </>
     )
   }
 
   return (
     <>
       {renderData()}
+  
+     
     </>
   )
 };

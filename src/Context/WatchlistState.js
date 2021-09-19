@@ -2,7 +2,9 @@ import WatchlistContext from "./watchlistContext";
 import { useState } from "react";
 
 const WatchlistState = (props) => {
-  const host = "http://localhost:5000"
+  const host = "https://my--crypto.herokuapp.com"
+    // "https://git.heroku.com/my--crypto.git"
+  // "http://localhost:5000"
   const watchlistsInitial = []
   const [watchlists, setWatchlists] = useState(watchlistsInitial)
 
@@ -16,6 +18,7 @@ const WatchlistState = (props) => {
         "auth-token": localStorage.getItem('token')
       }
     });
+
     const json = await response.json() 
     setWatchlists(json)
   }

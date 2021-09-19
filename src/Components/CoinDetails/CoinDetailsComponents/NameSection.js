@@ -29,7 +29,7 @@ const NameSection = ({ detail }) => {
                         <button className="watchlist-icon watchlist-icon-1 watchlistbtn" onClick={handleClick}>
                                 <span className="icon-Star-Filled">
                                 {" "}
-                                {(turnyellow === "true") ?  <i class="fa fa-star yellow-color " style={{color:"blue"}} ></i>   : <i class="fa fa-star"></i>}
+                                {(turnyellow === "true") ?  <i className="fa fa-star yellow-color " style={{color:"blue"}} ></i>   : <i className="fa fa-star"></i>}
                                     </span>
                         </button>
                     </span>

@@ -16,11 +16,13 @@ const CoinLogo = ({ coin }) => {
     const handleClick = (e) => {
         e.preventDefault();
         addWatchlist(coin.id);
+        // localStorage.setItem()
         setWatchlist({ coinid: "" })
         setturnyellow("true")
+        alert("Added to watchlist")
     }
 
-
+   
     return (
         <>
             <div className="for-hover">
@@ -48,7 +50,7 @@ const CoinLogo = ({ coin }) => {
                             </div>
                         </Link>
                         <div style={{ marginLeft: "8px" }}>
-                            <button className="add-logo ml-3"><i className="fa fa-plus"></i></button>
+                            <button className="add-logo ml-3"><Link to="/Portfolio"><i className="fa fa-plus" ></i></Link></button>
                         </div>
                     </div>
                 </div>
