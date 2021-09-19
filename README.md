@@ -87,6 +87,13 @@ The main motto of MyCrypto is to CREATE, READ, UPDATE,DELETE portfolios and watc
 
 ![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/sign-up.png)
 
+
+## User Details
+
+
+![alt tag](https://raw.githubusercontent.com/ipankajchaudhary/MyCrypto-FrontEnd/main/readme-images/User-details.png)
+
+
 ## About ME
 
 
@@ -97,12 +104,12 @@ The main motto of MyCrypto is to CREATE, READ, UPDATE,DELETE portfolios and watc
 
 # `TECH STACK` 
 
-####• Express.js
-####• Node.js
-####• MongoDB
-####• React.js
-####• Bootstrap
-####• Material UI
-####• Canvas js
+• Express.js
+• Node.js
+• MongoDB
+• React.js
+• Bootstrap
+• Material UI
+• Canvas js
 
 #Made with :sparkling_heart: and 	&lt; /Code &gt; by Pankaj Chaudhary
