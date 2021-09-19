@@ -104,12 +104,12 @@ The main motto of MyCrypto is to CREATE, READ, UPDATE,DELETE portfolios and watc
 
 # `TECH STACK` 
 
-• Express.js
-• Node.js
-• MongoDB
-• React.js
-• Bootstrap
-• Material UI
-• Canvas js
+• Express.js\
+• Node.js\
+• MongoDB\
+• React.js\
+• Bootstrap\
+• Material UI\
+• Canvas js\
 
 #Made with :sparkling_heart: and 	&lt; /Code &gt; by Pankaj Chaudhary
