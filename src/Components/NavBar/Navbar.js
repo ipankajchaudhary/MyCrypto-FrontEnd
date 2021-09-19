@@ -49,7 +49,7 @@ const Navbar = ({ currentcurrency, changecurrency, changeloggedin, changeauthtok
                                 <Link className={`nav-link ${location.pathname==="/Watchlist"? "active hover-underline-animation": "hover-underline-animation"}`} to="/Watchlist" > <b>Watchlist</b> </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link hover-underline-animation" to="/Aboutus"> <b>About Us</b> </Link>
+                                <Link className="nav-link hover-underline-animation" to="/Aboutme"> <b>About Me</b> </Link>
                             </li>
                         </ul>
                         <div className="navbar-text d-flex justify-content-between">

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './Footerstyle.css'
 const Footer = () => {
     return (
@@ -21,9 +20,9 @@ const Footer = () => {
                         <div className="col-xs-6 col-md-3">
                             <h5>About Me</h5>
                             <ul className="footer-links">
-                                <li><Link target="_blank" to="https://www.linkedin.com/in/pankaj-chaudhary-067b041a6/">  <b>Linkedin</b> </Link></li>
-                                <li><Link target="_blank" to="https://github.com/ipankajchaudhary">      <b>Github</b>  </Link></li>
-                                <li><Link target="_blank" to="https://www.instagram.com/i_pankajchaudhary/">  <b>Instagram</b>    </Link></li>
+                                <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pankaj-chaudhary-067b041a6/">  <b>Linkedin</b> </a></li>
+                                <li><a target="_blank" rel="noreferrer" href="https://github.com/ipankajchaudhary">      <b>Github</b>  </a></li>
+                                <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/i_pankajchaudhary/">  <b>Instagram</b>    </a></li>
                             </ul>
                         </div>
                         <div className="col-xs-6 col-md-3">

@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
 const Aboutus = () => {
     return (
         <div>
@@ -18,9 +16,9 @@ const Aboutus = () => {
                     <br />
                     <br />
                     <ul className="footer-links">
-                                <li><Link target="_blank" to="https://www.linkedin.com/in/pankaj-chaudhary-067b041a6/">  <b>Linkedin</b> </Link></li>
-                                <li><Link target="_blank" to="https://github.com/ipankajchaudhary">      <b>Github</b>  </Link></li>
-                                <li><Link target="_blank" to="https://www.instagram.com/i_pankajchaudhary/">  <b>Instagram</b>    </Link></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/pankaj-chaudhary-067b041a6/">  <b>Linkedin</b> </a></li>
+                    <li><a target="_blank" href="https://github.com/ipankajchaudhary">      <b>Github</b>  </a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/i_pankajchaudhary/">  <b>Instagram</b>    </a></li>
                     </ul>
                     
                     

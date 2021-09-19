@@ -62,7 +62,7 @@ function App() {
 
                 <UserDetails />
                   </Route>
-                  <Route exact path="/Aboutus">
+                  <Route exact path="/Aboutme">
 
                   <Aboutus />
                 </Route>
