@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
 const UserDetails = () => {
-    const host = "http://localhost:5000"
+    const host = "https://my--crypto.herokuapp.com"
     const [userData, setuserData] = useState({})
 
     // let location = useLocation();

@@ -13,23 +13,30 @@ function SignUp({ changeloggedin, changeauthtoken }) {
         const response = await fetch("https://my--crypto.herokuapp.com/api/auth/createuser", {
             method: 'POST',
             headers: {
-            'Content-Type': 'application/json'
-        },
+                'Content-Type': 'application/json'
+            },
             body: JSON.stringify({ name, email, password })
         });
-    const json = await response.json()
-    changeauthtoken(json.authtoken)
-    // Save the auth token and redirect
-    localStorage.setItem('token', json.authtoken);
-    history.push("/");
-    changeloggedin("true")
-    // console.log("Logged in")
+        const json = await response.json()
+        
+        if (json.error === "Already Registered | Login to Continue") {
+            alert('Already Registered | Login to Continue')
+        }
+        else {
+            
+            changeauthtoken(json.authtoken)
+            // Save the auth token and redirect
+            localStorage.setItem('token', json.authtoken);
+            history.push("/");
+            changeloggedin("true")
+            // console.log("Logged in")
+        }
 }
 
 
 const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
-    console.log(credentials.password)
+    // console.log(credentials.password)
 }
 const [show, setshow] = useState('false')
 

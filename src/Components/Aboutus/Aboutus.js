@@ -16,9 +16,9 @@ const Aboutus = () => {
                     <br />
                     <br />
                     <ul className="footer-links">
-                    <li><a target="_blank" href="https://www.linkedin.com/in/pankaj-chaudhary-067b041a6/">  <b>Linkedin</b> </a></li>
-                    <li><a target="_blank" href="https://github.com/ipankajchaudhary">      <b>Github</b>  </a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/i_pankajchaudhary/">  <b>Instagram</b>    </a></li>
+                    <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pankaj-chaudhary-067b041a6/">  <b>Linkedin</b> </a></li>
+                    <li><a target="_blank" rel="noreferrer" href="https://github.com/ipankajchaudhary">      <b>Github</b>  </a></li>
+                    <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/i_pankajchaudhary/">  <b>Instagram</b>    </a></li>
                     </ul>
                     
                     
